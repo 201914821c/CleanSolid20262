@@ -1,7 +1,7 @@
 (() => {
 
     // función para obtener información de una película por Id
-    function getAllMovies( id: string ) {
+    function getMovieId( id: string ) {
         console.log({ id });
     }
 
@@ -16,8 +16,11 @@
     }
     
     // Crear una película
-    function movie(title: string, description: string, rating: number, cast: string[] ) {
-        console.log({ title, description, rating, cast });
+    interface Movie{
+        cast:string[];
+        description:string[];
+        rating:number;
+        title:string;
     }
 
     // Crea un nuevo actor
